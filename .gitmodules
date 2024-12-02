@@ -1,0 +1,6 @@
+[submodule "se_academy_app_v2"]
+	path = se_academy_app_v2
+	url = https://github.com/Bthcorn/se_academy_app_v2.git
+[submodule "se_academy_api"]
+	path = se_academy_api
+	url = https://github.com/plscallMeAlex/se_academy_api.git

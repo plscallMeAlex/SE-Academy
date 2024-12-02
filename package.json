@@ -1,0 +1,18 @@
+{
+  "name": "se_academy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "cd se_academy_app_v2 && npm run dev",
+    "api": "cd se_academy_api && venv\\Scripts\\activate && uvicorn main:app --reload",
+    "dev": "concurrently \"npm run api\" \"npm run app\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

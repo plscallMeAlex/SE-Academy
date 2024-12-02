@@ -1,0 +1,55 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build directories
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Python specific (if relevant to `se_academy_api`)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+
+# Docker-related
+*.dockerfile
+docker-compose.override.yml
+*.tar
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Git specific
+*.orig
+*.rej
+
+# Exclude local sub-repositories (if using submodules, remove the following lines)
+se_academy_api/.git
+se_academy_app_v2/.git
