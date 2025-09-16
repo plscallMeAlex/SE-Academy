@@ -2,6 +2,32 @@
 
 Online learning platform for the formal and current SE student who want to reviewing the subject you have learned in SE life.
 
+## Environment Setup
+
+You need to set the environment in the following file
+
+alembic.ini in api submodule.
+
+```bash
+sqlalchemy.url={YOUR DATABASE CONNECTION STRING}
+```
+
+create .env file inside the api submodule.
+
+```.env
+DB_URL={YOUR_CONNECTION_STRING}
+SECRET_KEY={YOUR_SECRET_KEY}
+POSTGRES_USER={DB_USERNAME}
+POSTGRES_PASSWORD={DB_PASSWORD}
+POSTGRES_DB={YOUR_DBNAME}
+```
+
+Format of the connection string:
+
+```python
+"postgresql+psycopg2://{DB_USERNAME}:{DB_PASSWORD}@{DB_SERVER}:{DB_PORT}/{DB_NAME}"
+```
+
 ## Clone
 
 To clone this repository there have 2 ways to do
@@ -64,7 +90,7 @@ Using This command in the deployment step.
 Start New Using (--build flag)
 
 ```bash
-docker compose up -ds
+docker compose up -d
 ```
 
 Stop
